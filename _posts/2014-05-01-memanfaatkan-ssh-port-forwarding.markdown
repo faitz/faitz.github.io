@@ -34,5 +34,5 @@ Selamat Mencoba
 ~faitz
 
 [svn]:http://en.wikipedia.org/wiki/Apache_Subversion
-[ssh]:en.wikipedia.org/wiki/Secure_Shell‎
-[socks]:en.wikipedia.org/wiki/SOCKS
+[ssh]:http://en.wikipedia.org/wiki/Secure_Shell‎
+[socks]:http://en.wikipedia.org/wiki/SOCKS
