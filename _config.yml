@@ -1,3 +1,4 @@
 name: Github Page Owned By Faitz
 markdown: redcarpet
-pygments: true
+highlighter: true
+paginate: 10

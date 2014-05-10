@@ -12,5 +12,17 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 100px;
+}
+
+img{
+	border:1px solid #000000;
+	box-shadow: 10px 10px 10px 5px #cccccc;
+	margin-bottom: 20px;
+}
+
+.pagination{
+	margin-top: 50px;
+	width: 100%;
+  text-align: center;
 }

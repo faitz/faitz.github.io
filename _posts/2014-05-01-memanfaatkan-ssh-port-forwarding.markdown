@@ -2,11 +2,10 @@
 layout: post
 title:  "Memanfaatkan SSH Port Forwarding"
 date:   2014-05-01 16:54:43
-categories: ssh
+categories: ssh tunneling
+tags: ssh tunneling tips
 ---
-[SSH (secure shell)][ssh] bukan hanya digunakan untuk melakukan remote shell saja, tapi kita bisa manfaatkan sebagai port forwarding maupun sebagai proxy.
-
-misalkan kita saat mengembangkan sebuah aplikasi, kita perlu mengakses sebuah resources dari suatu server, namun server tersebut hanya bisa diakses oleh satu IP saja, bagaimana caranya kita akses resource tersebut. Saya beri contoh dalam kasus saya, saya perlu mengakses [svn (subversion)][svn] dengan alamat https://svnserver.com (192.168.1.3), namun server tersebut hanya membuka akses untuk alamat tertentu misalnya sshtunnelserver.com (192.168.1.5). Dari sini kita bisa akses server svn tersebut tapi hanya melalui server sshtunnelserver.com dengan menggunakan ssh, dengan syarat ssh server tersebut bisa kita akses. Bagaimana cara melakukanya?
+[SSH (secure shell)][ssh] bukan hanya digunakan untuk melakukan remote shell saja, tapi kita bisa manfaatkan sebagai port forwarding maupun sebagai proxy. Misalkan kita saat mengembangkan sebuah aplikasi, kita perlu mengakses sebuah resources dari suatu server, namun server tersebut hanya bisa diakses oleh satu IP saja, bagaimana caranya kita akses resource tersebut. Saya beri contoh dalam kasus saya, saya perlu mengakses [svn (subversion)][svn] dengan alamat https://svnserver.com (192.168.1.3), namun server tersebut hanya membuka akses untuk alamat tertentu misalnya sshtunnelserver.com (192.168.1.5). Dari sini kita bisa akses server svn tersebut tapi hanya melalui server sshtunnelserver.com dengan menggunakan ssh, dengan syarat ssh server tersebut bisa kita akses. Bagaimana cara melakukanya?
 
 ```
 ssh -L 8443:svnserver.com:443 user@sshtunnelserver.com
@@ -31,7 +30,6 @@ ssh -D8181 user@sshtunnelserver.com
 selanjutnya anda tinggal melakukan pengaturan proxy menggunakan [SOCKS][socks] dengan host localhost dan port 8181. dan telah membuat proxy sederhana.
 Selamat Mencoba
 
-~faitz
 
 [svn]:http://en.wikipedia.org/wiki/Apache_Subversion
 [ssh]:http://en.wikipedia.org/wiki/Secure_Shell‎

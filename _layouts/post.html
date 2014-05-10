@@ -7,6 +7,7 @@ layout: default
 </div>
 <div class="post">
 {{ content }}
+By <a href="https://plus.google.com/+FaisalAbdillah?rel=author">Muhamad Faisal Abdillah</a>
 </div>
 
  <div id="disqus_thread"></div>
@@ -24,3 +25,15 @@ layout: default
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
+<br/>
+
+<div class="pagination">
+  <div class="btn-group">
+    {% if page.next %} 
+    <a href="{{page.next.url}}" class="btn btn-primary"><span class="glyphicon glyphicon-fast-backward"></span> Post Berikutnya</a>
+    {% endif %}
+    {% if page.previous %} 
+    <a href="{{page.previous.url}}"  class="btn btn-primary">Post Sebelumnya <span class="glyphicon glyphicon-fast-forward"></span></a>
+    {% endif %}
+  </div>
+</div>
