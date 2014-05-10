@@ -21,6 +21,8 @@ untuk melakukan hal ini kita harus mengaktifkan developer mode dengan cara menek
 Metode berikutnya adalah dengan melakukan pengaturan pada developer tools dengan cara mencentang Disable Cache(while DevTool is open), ketika option ini decentang maka ketika kita merefresh halaman web yang ada kembangkan, Chrome akan selalu mengambil resource web dari sumbernya tanpa melalui cache.
 ![Configure developer tools]({{site.url}}/assets/images/chrome-setting-developer.jpeg)
 
+![Configure developer tools]({{site.url}}/assets/images/chrome-disable-cache.jpeg)
+
 
 
 ###3. Mode Penyamaran (Incognito Mode)
